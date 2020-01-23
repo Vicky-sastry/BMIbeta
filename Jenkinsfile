@@ -14,7 +14,7 @@ pipeline {
         }
         stage('azure'){
             steps{
-               sh 'curl -X GET https://dev.azure.com/vickysastryvs/d2/_apis/build/builds/20200121.1?api-version=5.0'
+               sh 'curl -X GET https://dev.azure.com/vickysastryvs/d2/_apis/build/builds/20200121.1/logs?api-version=5.0'
             
             }
         
