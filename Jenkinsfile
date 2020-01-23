@@ -14,7 +14,7 @@ pipeline {
         }
         stage('azure'){
             steps{
-               sh 'curl -u {vickysastry.vs@outlook.com}[:{zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya}] --request DELETE https://dev.azure.com/vickysastryvs/d2/_apis/build/definitions/2?api-version=5.0'
+               sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request DELETE https://dev.azure.com/vickysastryvs/d2/_apis/build/definitions/2?api-version=5.0'
             
             }
         
