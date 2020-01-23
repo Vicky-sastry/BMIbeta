@@ -12,7 +12,15 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-        stage('SonarQube Analysis'){
+        stage('azure'){
+            steps{
+               sh 'curl -X GET https://dev.azure.com/vickysastryvs/d2/_apis/build/builds/20200121.1?api-version=5.0'
+            
+            }
+        
+        }
+          
+        /*stage('SonarQube Analysis'){
             steps{
                withSonarQubeEnv('sonarqube'){
                      sh '${sonarscanner}/bin/sonar-scanner -Dproject.settings=./sonar-project.properties'
@@ -69,7 +77,7 @@ pipeline {
                     sh 'curl -v -u ${username}:${password} -T target/BMI${BUILD_NUMBER}.war ${tomcat_url}/manager/text/deploy?path=/BMI'
                 }
             }
-        }*/
+        }
         
      }
                post { 
@@ -81,6 +89,7 @@ pipeline {
                     echo 'notified to slack'
                     slackSend (color: '#FF0000', message: " JOB FAILED: Job '${JOB_NAME} [${BUILD_NUMBER}]' (${BUILD_URL})")
                 }
-               }
+               */
+    }
 
 }
