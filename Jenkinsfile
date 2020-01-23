@@ -19,7 +19,7 @@ pipeline {
                 sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request GET https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
                /* sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST https://dev.azure.com/vickysastryvs/d2/_apis/build/builds?sourceBuildId=3&api-version=5.1'
             */
-                sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -X POST -H https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
+                sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
             }
         
         }
