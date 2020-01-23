@@ -17,6 +17,7 @@ pipeline {
              /*  sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request DELETE https://dev.azure.com/vickysastryvs/d2/_apis/build/definitions/1?api-version=5.0'
             */
                 sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request GET https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
+                sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -XPOST https://dev.azure.com/vickysastryvs/d2/_apis/build/builds?sourceBuildId=3&api-version=5.1'
             }
         
         }
