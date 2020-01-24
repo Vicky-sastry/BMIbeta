@@ -19,11 +19,7 @@ pipeline {
                 sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request GET https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
                /* sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST https://dev.azure.com/vickysastryvs/d2/_apis/build/builds?sourceBuildId=3&api-version=5.1'
             */
-                sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST Content-Type: application/json' -d '{ "name": "FabrikamTravel",
-  "description": "Frabrikam travel app for Windows Phone",
-  "capabilities": {
-    "versioncontrol": {
-      "sourceControlType": "Git"}' https://dev.azure.com/vickysastryvs/_apis/projects?api-version=6.0-preview.4'
+                sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST Content-Type: application/json' -d '{"name":"FabrikamTravel","description": "Frabrikam travel app for Windows Phone", "capabilities": {"versioncontrol": {"sourceControlType": "Git"}' https://dev.azure.com/vickysastryvs/_apis/projects?api-version=6.0-preview.4'
             }
         
         }
