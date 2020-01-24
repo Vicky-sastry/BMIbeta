@@ -1,4 +1,7 @@
 pipeline {
+    libraries{
+     lib 'shlib'
+}
     agent any
     tools {
         maven "Maven"   
@@ -12,13 +15,31 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-        stage('azure'){
+        stage('azureconnector')
+        {
+            steps
+            {
+                azureconn()
+            }
+        }
+        stage('azurecollector')
+        {
+            steps
+            {
+                azurecol()
+            }
+        }
+        
+       
+        
+        
+        /*stage('azure'){
             steps{
              /*  sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request DELETE https://dev.azure.com/vickysastryvs/d2/_apis/build/definitions/1?api-version=5.0'
-            */
+            
                 sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya --request GET https://dev.azure.com/vickysastryvs/_apis/projects?api-version=5.1'
                /* sh 'curl -u vickysastry.vs@outlook.com:zsxapkj3zwk6rtz7zm4tyli7ayk7yt5yehp5ic7erlec4xsf7tya -H -X POST https://dev.azure.com/vickysastryvs/d2/_apis/build/builds?sourceBuildId=3&api-version=5.1'
-            */
+            
                 sh '''
                 curl --location --request POST 'https://dev.azure.com/vickysastryvs/_apis/projects?api-version=6.0-preview.4' \
 --header 'Content-Type: application/json' \
@@ -40,7 +61,7 @@ pipeline {
             }
         
        }
-          
+          */
         /*stage('SonarQube Analysis'){
             steps{
                withSonarQubeEnv('sonarqube'){
