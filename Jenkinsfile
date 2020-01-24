@@ -30,6 +30,22 @@ pipeline {
             }
         }
         
+        stage('sonarconnector')
+        {
+            steps
+            {
+                sonarConnector()
+            }
+        }
+        
+        stage('sonarcollector')
+        {
+            steps
+            {
+                sonarCollector()
+            }
+        }
+        
        
         
         
