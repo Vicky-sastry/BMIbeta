@@ -30,7 +30,7 @@ pipeline {
             }
         }
         
-        stage('sonarconnector')
+      /*  stage('sonarconnector')
         {
             steps
             {
@@ -46,7 +46,7 @@ pipeline {
             }
         }
         
-       
+       */
         
         
         /*stage('azure'){
