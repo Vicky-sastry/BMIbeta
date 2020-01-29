@@ -15,6 +15,12 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+        stage('azure'){
+            steps{
+                sh 'az devops project create --name vicky'
+            }
+        
+        }
         stage('azureconnector')
         {
             steps
