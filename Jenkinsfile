@@ -19,7 +19,7 @@ pipeline {
         {
             steps
             {
-                azureconn()
+                azureconn(msg)
             }
         }
         stage('azurecollector')
