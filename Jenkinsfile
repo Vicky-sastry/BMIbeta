@@ -19,7 +19,7 @@ pipeline {
         {
             steps
             {
-                azureconn "MyPro"
+                azureconn 'MyPro'
             }
         }
         stage('azurecollector')
