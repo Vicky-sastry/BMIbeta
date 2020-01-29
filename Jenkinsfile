@@ -18,7 +18,7 @@ pipeline {
         stage('azure'){
             steps{
                 sh 'az extension add --name azure-devops'
-                sh 'az devops project create --name vicky'
+                sh 'az devops project create --name vicky --organization https://dev.azure.com/vickysastryvs'
             }
         
         }
