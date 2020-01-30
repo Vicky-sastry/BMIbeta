@@ -25,13 +25,13 @@ pipeline {
            // }     
         
         //}
-        stage('azureconnector')
+       /* stage('azureconnector')
         {
             steps
             {
                 azureconn()
             }
-        }
+        }*/
         stage('azurecollector')
         {
             steps
