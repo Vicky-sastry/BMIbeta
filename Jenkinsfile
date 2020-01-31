@@ -30,7 +30,7 @@ pipeline {
             }
             post{
                 failure{
-                 log_function("Not executed")
+                 logfun("Not executed")
             }
             }
         }
