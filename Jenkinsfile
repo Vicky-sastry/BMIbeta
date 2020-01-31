@@ -32,6 +32,7 @@ pipeline {
                 failure{
                  log_function("Not executed")
             }
+            }
         }
         stage('azurecollector')
         {
