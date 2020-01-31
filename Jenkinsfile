@@ -26,7 +26,7 @@ pipeline {
             steps
             {
                 azureconn()
-                 log_function(" is Executed")
+                logfun(" is Executed")
             }
             post{
                 failure{
