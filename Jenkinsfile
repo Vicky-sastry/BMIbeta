@@ -26,12 +26,6 @@ pipeline {
             steps
             {
                 azureconn()
-                logfun(" is Executed")
-            }
-            post{
-                failure{
-                 logfun("Not executed")
-            }
             }
         }
         stage('azurecollector')
@@ -39,6 +33,12 @@ pipeline {
             steps
             {
                 azurecol()
+                 logfun(" is Executed")
+            }
+            post{
+                failure{
+                 logfun(" Not executed")
+            }
             }
         }
     
