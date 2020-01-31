@@ -10,13 +10,13 @@
                 azureconn()
             }
         }
-        stage('azurecollector')
+       /* stage('azurecollector')
         {
             steps
             {
                 azurecol()
             }
-        }
+        }*/
     }
          }
                   
