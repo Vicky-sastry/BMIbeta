@@ -2,19 +2,19 @@ pipeline {
     libraries{
      lib 'shlib'
 }
-    agent any
+   /* agent any
     tools {
         maven "Maven"   
-    }   
+    }   */
   /*  environment{
         sonarscanner = tool 'SonarScanner'
     }*/
-    stages {
-        stage('Compile-Build-Test ') {
+   stages {
+       /* stage('Compile-Build-Test ') {
             steps {
                 sh 'mvn clean package'
             }
-        }
+        }*/
        // stage('azure'){
             //steps{
                 //   withCredentials([string(credentialsId: 'azure')]){
