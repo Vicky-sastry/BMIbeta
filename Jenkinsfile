@@ -30,13 +30,26 @@ pipeline {
             steps
             {
                 azureconn()
+                logfun("is created")
             }
+            post{
+                failure{
+                    logfun("is not created")
+                }
+            }
+           
         }
         stage('azurecollector')
         {
             steps
             {
                 azurecol()
+                logfun(" are listed")
+            }
+            post{
+                failure{
+                    logfun("is not fetched")
+                }
             }
         }
         
