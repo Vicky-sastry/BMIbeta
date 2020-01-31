@@ -1,6 +1,5 @@
-pipeline {
-    libraries{
-     lib 'shlib'
+@Library('shlib')_
+         pipeline {
 }
     agent any
     tools {
@@ -10,11 +9,6 @@ pipeline {
         sonarscanner = tool 'SonarScanner'
     }*/
     stages {
-        stage(Compile-Build-Test){
-            steps{
-                sh 'mvn clean package'
-            }
-        }
         
        // stage('azure'){
             //steps{
