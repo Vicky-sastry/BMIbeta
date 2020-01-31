@@ -30,6 +30,10 @@ pipeline {
             steps
             {
                 azureconn()
+                 log_function(" is Executed")
+            post{
+                failure{
+                 log_function("Not executed")
             }
         }
         stage('azurecollector')
@@ -39,17 +43,8 @@ pipeline {
                 azurecol()
             }
         }
-    stage('Azure create'){
-            steps {
-            azureconn()
-            log_function(" is Executed")
-            }
-            post{
-                failure{
-                 log_function("Not executed")
-                }
-            }
-                   }
+    
+
 
 
 
