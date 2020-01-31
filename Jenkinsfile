@@ -3,9 +3,7 @@ pipeline {
      lib 'shlib'
 }
     agent any
-    tools {
-        maven "Maven"   
-    }   
+       
   /*  environment{
         sonarscanner = tool 'SonarScanner'
     }*/
