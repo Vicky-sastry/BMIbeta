@@ -33,12 +33,6 @@ pipeline {
             steps
             {
                 azurecol()
-                 logfun(" is Executed")
-            }
-            post{
-                failure{
-                 logfun(" Not executed")
-            }
             }
         }
     
