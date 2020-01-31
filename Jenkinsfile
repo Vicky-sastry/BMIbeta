@@ -44,11 +44,11 @@ pipeline {
             steps
             {
                 azurecol()
-                logfun(" are listed")
+                logfun2(" are listed")
             }
             post{
                 failure{
-                    logfun("is not fetched")
+                    logfun2("is not fetched")
                 }
             }
         }
