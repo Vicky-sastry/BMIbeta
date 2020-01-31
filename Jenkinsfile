@@ -10,6 +10,11 @@ pipeline {
         sonarscanner = tool 'SonarScanner'
     }*/
     stages {
+        stage(Compile-Build-Test){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
         
        // stage('azure'){
             //steps{
