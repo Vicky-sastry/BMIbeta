@@ -10,7 +10,7 @@ pipeline {
         sonarscanner = tool 'SonarScanner'
     }*/
     stages {
-        ]
+        
        // stage('azure'){
             //steps{
                 //   withCredentials([string(credentialsId: 'azure')]){
