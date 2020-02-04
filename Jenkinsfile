@@ -11,7 +11,7 @@ pipeline {
        stage('Delete azure project')
        {
            steps{
-               azdel()
+               azpartproject()
            }
        }
                
