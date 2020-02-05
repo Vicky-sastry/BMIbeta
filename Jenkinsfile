@@ -37,6 +37,12 @@ pipeline {
                     logfun("is not created")
                 }
             }
+            stage('Team Creation')
+            {
+                steps{
+                    create_team_json(JSON)
+                }
+            }
            
         }
        /* stage('azurecollector')
