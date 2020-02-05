@@ -30,6 +30,7 @@ pipeline {
             steps
             {
                 create_project_json(JSON)
+                storeoutput(JSON)
                 
             }
         }
