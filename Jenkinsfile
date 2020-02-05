@@ -7,7 +7,6 @@ pipeline {
         maven "Maven"   
     }   
   
-   stages {
       /*stage('Delete azure project')
        {
            steps{
@@ -24,19 +23,16 @@ pipeline {
            }
        }*/
                
-       
+    stages{
+        
       stage('azureconnector')
         {
             steps
             {
                 create_project_json(JSON)
-                logfun("is created")
+                
             }
-            post{
-                failure{
-                    logfun("is not created")
-                }
-            }
+        }
             stage('Team Creation')
             {
                 steps{
@@ -60,4 +56,4 @@ pipeline {
         }*/
     }
 
-}
+
