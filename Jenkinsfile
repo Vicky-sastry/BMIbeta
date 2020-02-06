@@ -81,6 +81,12 @@ pipeline {
                     fetch_build_list(JSON)
                 }
             }
+         stage('Deleting a project')
+            {
+                steps{
+                    delete_proj_json(JSON)
+                }
+            }
         
     }
 }
