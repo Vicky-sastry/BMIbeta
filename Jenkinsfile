@@ -34,7 +34,7 @@ pipeline {
                 
             }
         }
-          stage('Update Project')
+          /*stage('Update Project')
         {
             steps
             {
@@ -47,7 +47,7 @@ pipeline {
                 steps{
                     create_team_json(JSON)
                 }
-            }
+            }*/
            
         }
        /* stage('azurecollector')
