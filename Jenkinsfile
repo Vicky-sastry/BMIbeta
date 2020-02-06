@@ -63,7 +63,13 @@ pipeline {
                     fetch_teams_org(JSON)
                 }
             }
+         stage('Teams fetching')
+            {
+                steps{
+                    fetch_cntrl_org(JSON)
         }
     }
+    }
+}
 
 
