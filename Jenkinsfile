@@ -75,6 +75,13 @@ pipeline {
                     fetch_build_settings(JSON)
         }
     }
+        stage('Build list fetching')
+            {
+                steps{
+                    fetch_build_list(JSON)
+                }
+            }
+        
     }
 }
 
