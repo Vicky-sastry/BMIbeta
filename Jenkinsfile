@@ -25,7 +25,7 @@ pipeline {
                
     stages{
         
-      stage('azureconnector')
+      stage('create project')
         {
             steps
             {
@@ -50,7 +50,7 @@ pipeline {
             }
         
            
-       stage('azurecollector')
+       stage('Fetch Particular project Details')
         {
             steps
             {
