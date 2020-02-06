@@ -34,6 +34,14 @@ pipeline {
                 
             }
         }
+          stage('Update Project')
+        {
+            steps
+            {
+                update_project_json(JSON)
+                
+            }
+        }
             stage('Team Creation')
             {
                 steps{
