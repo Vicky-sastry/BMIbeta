@@ -57,6 +57,12 @@ pipeline {
                col_p_pr_det(JSON)
                 }
             }
+        stage('Teams fetching')
+            {
+                steps{
+                    fetch_teams_org(JSON)
+                }
+            }
         }
     }
 
