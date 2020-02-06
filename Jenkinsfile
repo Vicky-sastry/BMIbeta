@@ -63,7 +63,7 @@ pipeline {
                     fetch_teams_org(JSON)
                 }
             }
-         stage('Teams fetching')
+         stage('Controllers fetching')
             {
                 steps{
                     fetch_cntrl_org(JSON)
