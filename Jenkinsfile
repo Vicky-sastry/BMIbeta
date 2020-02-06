@@ -69,6 +69,12 @@ pipeline {
                     fetch_cntrl_org(JSON)
         }
     }
+        stage('Build settings fetching')
+            {
+                steps{
+                    fetch_build_settings(JSON)
+        }
+    }
     }
 }
 
