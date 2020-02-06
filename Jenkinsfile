@@ -34,35 +34,30 @@ pipeline {
                 
             }
         }
-          stage('Update Project')
+          /*stage('Update Project')
         {
             steps
             {
                 update_project_json(JSON)
                 
             }
-        }
+        }*/
             stage('Team Creation')
             {
                 steps{
                     create_team_json(JSON)
                 }
             }
+        
            
-        }
-       /* stage('azurecollector')
+       stage('azurecollector')
         {
             steps
             {
-                azurecol()
-                logfun2(" are listed")
-            }
-            post{
-                failure{
-                    logfun2("is not fetched")
+               col_p_pr_det(JSON)
                 }
             }
-        }*/
+        }
     }
 
 
