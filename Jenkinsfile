@@ -70,6 +70,12 @@ pipeline {
                 fetch_team()
             }
         }
+        stage('delete team')
+        {
+            steps{
+                delete_team()
+            }
+        }
         /* stage('Deleting a project')
             {
                 steps{
