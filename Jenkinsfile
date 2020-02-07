@@ -14,7 +14,7 @@ pipeline {
             {
                 create_project_json(JSON)
                 storeoutput(JSON)
-                logfun("${projecctName} is created")   
+                logfun("is created")   
             }
         }
           stage('Update Project')
