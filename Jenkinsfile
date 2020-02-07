@@ -70,6 +70,13 @@ pipeline {
                     delete_proj_json(JSON)
                 }
             }
+        stage('fetch teams of project')
+        {
+            steps{
+                fetch_team()
+            }
+        }
+        
         
     }
 }
