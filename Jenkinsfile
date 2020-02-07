@@ -25,14 +25,14 @@ pipeline {
                 
             }
         }
-        /*    stage('Team Creation')
+            stage('Team Creation')
             {
                 steps{
                     create_team_json(JSON)
                 }
             }
         
-           
+        /*   
        stage('Fetch Particular project Details')
         {
             steps
