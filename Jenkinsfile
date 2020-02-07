@@ -17,7 +17,14 @@ pipeline {
                // logfun("is created")   
             }
         }
-          stage('Update Project')
+
+            stage('Team Creation')
+            {
+                steps{
+                    create_team_json(JSON)
+                }
+            }
+                  stage('Update Project')
         {
             steps
             {
@@ -25,14 +32,7 @@ pipeline {
                 
             }
         }
-            stage('Team Creation')
-            {
-                steps{
-                    create_team_json(JSON)
-                }
-            }
-        
-        /*   
+           
        stage('Fetch Particular project Details')
         {
             steps
