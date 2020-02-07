@@ -14,7 +14,12 @@ pipeline {
             {
                 create_project_json(JSON)
                 storeoutput(JSON)
-                
+                logfun("${projecctName} is created")   
+            }
+            post{
+                failure{
+                    logfun("${projecctName} is not created")
+                }
             }
         }
           stage('Update Project')
