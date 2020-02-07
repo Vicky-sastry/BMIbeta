@@ -17,7 +17,7 @@ pipeline {
                // logfun("is created")   
             }
         }
-          stage('Update Project')
+        /*  stage('Update Project')
         {
             steps
             {
