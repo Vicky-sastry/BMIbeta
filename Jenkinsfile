@@ -34,15 +34,11 @@ pipeline {
                 fetch_team()
 
                 delete_team()
-            }
-        }
-        /* stage('Deleting a project')
-            {
-                steps{
-                    delete_proj_json(JSON)
+                
+               delete_proj_json(JSON)
                 }
             }
-        */
+       
         
         
     }
