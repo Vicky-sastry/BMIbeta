@@ -36,7 +36,8 @@ pipeline {
               //  log_function("Azure", "Project Team Deleted ")
              // delete_proj_json(JSON)
                 //log_function("Azure", "Project Deleted ")
-                post
+            }
+            post
     {
       failure
       {
@@ -50,6 +51,5 @@ pipeline {
         
         
     }
-}
 
 
