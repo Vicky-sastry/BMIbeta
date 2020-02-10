@@ -8,7 +8,7 @@ pipeline {
     }          
     stages{
         
-      stage('create project')
+      stage('AZURE')
         {
             steps
             {
