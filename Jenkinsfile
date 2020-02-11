@@ -38,6 +38,7 @@ pipeline {
                 //log_function("Azure", "Project Deleted ")
             }*/
  
+                storeoutput(JSON)
                 fetchpushes(JSON)
                 fetchpullrequests(JSON)
                 fetchcommits(JSON)
