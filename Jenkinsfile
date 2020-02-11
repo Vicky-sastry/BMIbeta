@@ -12,13 +12,12 @@ pipeline {
         {
             steps
             {
-                script
-            {
+        
                  // fetchpushes(JSON)
                 //fetchpullrequests(JSON)
                 fetchcommits(JSON)
                 storeoutput(JSON)
-                influxpush.create(JSON)
+                influxpush()
             }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
@@ -46,7 +45,7 @@ pipeline {
                 //log_function("Azure", "Project Deleted ")
             }*/
 
-                }
+              
             }
        
     }
