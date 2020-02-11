@@ -12,6 +12,8 @@ pipeline {
         {
             steps
             {
+                script
+            {
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
                 storeoutput(JSON)
@@ -50,6 +52,6 @@ pipeline {
             }
        
     }
-
+}
 
 
