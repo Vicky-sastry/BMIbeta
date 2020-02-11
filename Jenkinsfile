@@ -45,7 +45,7 @@ pipeline {
                 //fetchpullrequests(JSON)
                 fetchcommits(JSON)
                 storeoutput(JSON)
-                influxpush.create(JSON)
+                influxpush(JSON)
             }
 
                 }
