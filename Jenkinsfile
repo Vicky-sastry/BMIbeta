@@ -14,6 +14,12 @@ pipeline {
             {
                 script
             {
+                 // fetchpushes(JSON)
+                //fetchpullrequests(JSON)
+                fetchcommits(JSON)
+                storeoutput(JSON)
+                influxpush.create(JSON)
+            }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
                 storeoutput(JSON)
@@ -39,14 +45,6 @@ pipeline {
              // delete_proj_json(JSON)
                 //log_function("Azure", "Project Deleted ")
             }*/
- 
-               
-               // fetchpushes(JSON)
-                //fetchpullrequests(JSON)
-                fetchcommits(JSON)
-                storeoutput(JSON)
-                influxpush.create(JSON)
-            }
 
                 }
             }
