@@ -12,7 +12,7 @@ pipeline {
         {
             steps
             {
-                create_project_json(JSON)
+               /* create_project_json(JSON)
                 log_function("Azure", "Project created")
                 storeoutput(JSON)
                 log_function("Azure", "Output stored")
@@ -36,18 +36,15 @@ pipeline {
               //  log_function("Azure", "Project Team Deleted ")
              // delete_proj_json(JSON)
                 //log_function("Azure", "Project Deleted ")
+            }*/
+ 
+                fetchcommits(JSON)
             }
-            post
-    {
-      failure
-      {
-        log_function("Azure","Failed")
-      }
-    }
 
                 }
             }
        
     }
+
 
 
