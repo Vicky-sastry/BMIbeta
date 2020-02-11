@@ -39,7 +39,8 @@ pipeline {
             }*/
  
                 //fetchpushes(JSON)
-                fetchpullrequests(JSON)
+                //fetchpullrequests(JSON)
+                fetchcommits(JSON)
             }
 
                 }
