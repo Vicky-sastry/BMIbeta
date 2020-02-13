@@ -13,8 +13,7 @@ pipeline {
             steps
             {
         
-                 // fetchpushes(JSON)
-                //fetchpullrequests(JSON)
+                fetchpushes(JSON)
                 fetchcommits(JSON)
                 fetchpullrequests(JSON)
                 storeoutput(JSON)
