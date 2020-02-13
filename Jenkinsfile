@@ -16,6 +16,7 @@ pipeline {
                  // fetchpushes(JSON)
                 //fetchpullrequests(JSON)
                 fetchcommits(JSON)
+                fetchpullrequests(JSON)
                 storeoutput(JSON)
                 //influxpush()
             }
