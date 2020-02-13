@@ -18,7 +18,7 @@ pipeline {
                 fetchcommits(JSON)
                 fetchpullrequests(JSON)
                 storeoutput(JSON)
-                influxpullrqst()
+                influxpushazrepo()
             }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
