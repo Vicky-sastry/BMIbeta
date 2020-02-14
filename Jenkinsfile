@@ -13,11 +13,11 @@ pipeline {
             steps
             {
         
-                fetchpushes(JSON)
+                //fetchpushes(JSON)
                 fetchcommits(JSON)
-                fetchpullrequests(JSON)
+                //fetchpullrequests(JSON)
                 storeoutput(JSON)
-                influxpushazrepo()
+                //influxpushazrepo()
             }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
