@@ -16,7 +16,7 @@ pipeline {
                 //fetchpushes(JSON)
                 fetchcommits(JSON)
                 //fetchpullrequests(JSON)
-                storeoutput(JSON)
+                //storeoutput(JSON)
                 //influxpushazrepo()
             }
                /* create_project_json(JSON)
