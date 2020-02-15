@@ -10,7 +10,7 @@ pipeline {
         stage('Hubot')
         {
             steps{
-                config()
+                examples()
                 
             }
         }
