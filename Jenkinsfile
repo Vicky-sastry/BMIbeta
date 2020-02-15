@@ -7,18 +7,25 @@ pipeline {
         maven "Maven"   
     }          
     stages{
-        
-      stage('AZURE')
+        stage('Hubot')
         {
-            steps
-            {
+            steps{
+                config()
+                
+            }
+        }
+        
+    //  stage('AZURE')
+    //    {
+        //    steps
+       //     {
         
               //  fetchpushes(JSON)
                 //fetchcommits(JSON)
-                fetchpullrequests(JSON)
+              //  fetchpullrequests(JSON)
                 //storeoutput(JSON)
                 //influxpushazrepo()
-            }
+          //  }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
                 storeoutput(JSON)
@@ -46,7 +53,7 @@ pipeline {
             }*/
 
               
-            }
+            
        
     }
 }
