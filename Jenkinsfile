@@ -22,6 +22,13 @@ pipeline {
             }
         
         }
+        stage('All builds'){
+            steps{
+                
+            sh "curl -XGET -g http://http://3.16.152.69:8080/job/jenkinsgame/api/json?tree=builds[number,status,timestamp,id,result] -u bhavya:11f637872d1e4ad949af6ac3add0118812"
+            }
+        }
+        
         
     //  stage('AZURE')
     //    {
