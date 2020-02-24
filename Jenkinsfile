@@ -7,12 +7,12 @@ pipeline {
         maven "Maven"   
     }          
     stages{
-        stage('Hubot')
+        /*stage('Hubot')
         {
             steps{
                 examples()
             }
-        }
+        }*/
         stage('User fetch'){
             steps{
                 wrap([$class: 'BuildUser']) {
