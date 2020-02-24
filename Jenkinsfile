@@ -13,6 +13,15 @@ pipeline {
                 examples()
             }
         }
+        stage('User fetch'){
+            steps{
+                wrap([$class: 'BuildUser']) {
+          sh 'echo "${BUILD_USER}"'
+        }
+            
+            }
+        
+        }
         
     //  stage('AZURE')
     //    {
