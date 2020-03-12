@@ -13,7 +13,7 @@ pipeline {
                 examples()
             }
         }*/
-        stage('User fetch'){
+        /*stage('User fetch'){
             steps{
                 wrap([$class: 'BuildUser']) {
           sh 'echo "${BUILD_USER}"'
@@ -28,20 +28,21 @@ pipeline {
                 sh "curl -X GET -g http://3.16.152.69:8080/job/${JOB_NAME}/api/json -u vicky:11f637872d1e4ad949af6ac3add0118812"
                 echo "No.of.Builds= $BUILD_NUMBER"
             }
-        }
+        }*/
         
         
-    //  stage('AZURE')
-    //    {
-        //    steps
-       //     {
+      stage('AZURE')
+       {
+            steps
+           {
+               fetchprojects(JSON)
         
               //  fetchpushes(JSON)
                 //fetchcommits(JSON)
               //  fetchpullrequests(JSON)
                 //storeoutput(JSON)
                 //influxpushazrepo()
-          //  }
+           }
                /* create_project_json(JSON)
                 log_function("Azure", "Project created")
                 storeoutput(JSON)
